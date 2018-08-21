@@ -17,12 +17,10 @@ components:
       properties:
         id:
           type: string
-          example:
-            value: '01srv001'
+          example: '01srv001'
         name:
           type: string
-          example:
-            value: 'Martin Delille'
+          example: 'Martin Delille'
 paths:
   /users/me:
     get:
