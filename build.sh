@@ -5,5 +5,5 @@ if [ $OS != "Darwin" ]; then
 else
   echo "no alias for macOS"
 fi
-openapi-generator generate -i api.yaml -g html -o html
+openapi-generator generate -i api.yaml -g html2 -o html && open html/index.html
 
