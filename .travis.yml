@@ -1,9 +1,8 @@
-os: osx
+language: java
+sdk: openjdk8
 script:
-- brew cask install homebrew/cask-versions/java8
-- brew install openapi-generator
-- mkdir html
-- "./build.sh"
+  - wget http://central.maven.org/maven2/org/openapitools/openapi-generator-cli/3.2.1/openapi-generator-cli-3.2.1.jar -O openapi-generator-cli.jar
+  - java -jar openapi-generator-cli.jar generate -i api.yaml -g html2 -o html
 deploy:
   provider: pages
   skip-cleanup: true
