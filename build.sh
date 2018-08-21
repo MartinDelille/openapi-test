@@ -1,7 +1,7 @@
 OS=$(uname -s);
 if [ $OS != "Darwin" ]; then
   echo "Creating alias"
-  alias openapi-generator -jar openapi-generator-cli.jar
+  alias openapi-generator="java -jar openapi-generator-cli.jar"
 else
   echo "no alias for macOS"
 fi

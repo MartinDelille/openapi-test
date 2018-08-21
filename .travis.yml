@@ -2,7 +2,6 @@ language: java
 sdk: openjdk8
 script:
   - wget http://central.maven.org/maven2/org/openapitools/openapi-generator-cli/3.2.1/openapi-generator-cli-3.2.1.jar -O openapi-generator-cli.jar
-  - alias openapi-generator="java -jar openapi-generator-cli.jar"
   - "./build.sh"
 deploy:
   provider: pages
