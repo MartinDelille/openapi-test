@@ -4,6 +4,7 @@ info:
   version: 1.0.0
   title: OpenAPI test
   contact:
+    url: https://github.com/MartinDelille/openapi-test
     email: "martin@lylo.tv"
 components:
   schemas:
