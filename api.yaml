@@ -31,3 +31,19 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
+  /users:
+    get:
+      responses:
+        '200':
+          description: array of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+                example:
+                  - id: 'aaa'
+                    name: 'Martin'
+                  - id: 'bbb'
+                    name: 'Thibaut'
